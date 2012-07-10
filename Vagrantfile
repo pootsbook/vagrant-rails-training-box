@@ -7,12 +7,12 @@ Vagrant::Config.run do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "base"
+  config.vm.box = "precise64"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
   # config.vm.box_url = "http://domain.com/path/to/above.box"
-  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+  #config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   # Boot with a GUI so you can see the screen. (Default is headless)
   # config.vm.boot_mode = :gui
@@ -74,6 +74,31 @@ Vagrant::Config.run do |config|
   #   # You may also specify custom JSON attributes:
   #   chef.json = { :mysql_password => "foo" }
   # end
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = ["cookbooks", "cookbooks-src"]
+    chef.add_recipe "apt"
+    chef.add_recipe "ruby_build"
+    chef.add_recipe "rbenv::system"
+    chef.add_recipe "rbenv::vagrant"
+    chef.add_recipe "git"
+    chef.add_recipe "nodejs::npm" # includes node.js
+    chef.add_recipe "redisio::install"
+    chef.add_recipe "redisio::enable"
+    chef.add_recipe "mongodb::10gen_repo"
+    chef.add_recipe "mongodb::default"
+    chef.add_recipe "imagemagick"
+    chef.add_recipe "vim"
+    chef.add_recipe "rails-lastmile"
+
+    chef.json = {
+      'rvm' => {
+        'default_ruby' => 'ruby-1.9.3-p194',
+        'gem_package' => {
+          'rvm_string' => 'ruby-1.9.3-p194'
+        }
+      }
+    }
+  end
 
   # Enable provisioning with chef server, specifying the chef server URL,
   # and the path to the validation key (relative to this Vagrantfile).

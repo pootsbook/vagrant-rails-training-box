@@ -16,3 +16,13 @@ cookbook 'nodejs',
   :git => 'https://github.com/fnichol/nodejs-cookbook'
 cookbook 'git',
   :git => 'git://github.com/fnichol/chef-git.git'
+cookbook 'rails-lastmile',
+  :path => 'cookbooks-src/rails-lastmile'
+cookbook 'redisio',
+  :git => 'git://github.com/brianbianco/redisio.git'
+cookbook 'mongodb',
+  :git => 'git://github.com/edelight/chef-cookbooks.git'
+cookbook 'imagemagick',
+  :git => 'git://github.com/opscode-cookbooks/imagemagick.git'
+cookbook 'vim',
+  :git => 'git://github.com/opscode-cookbooks/vim.git'

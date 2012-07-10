@@ -1,0 +1,97 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    build-essential (1.0.2)
+    runit (0.15.0)
+
+GIT
+  remote: git://github.com/brianbianco/redisio.git
+  ref: master
+  sha: e2ce47a6fdf471bdd0292614e07867d5ec31e424
+  specs:
+    redisio (1.0.3)
+
+GIT
+  remote: git://github.com/edelight/chef-cookbooks.git
+  ref: master
+  sha: d77f3162a9f7ffddf280ec50352d979784d9bb02
+  specs:
+    mongodb (0.11.0)
+      apt (>= 0.0.0)
+
+GIT
+  remote: git://github.com/fnichol/chef-apt.git
+  ref: master
+  sha: cb998dfdeffbcbb6805527b046b411206d6c77d6
+  specs:
+    apt (1.2.0)
+
+GIT
+  remote: git://github.com/fnichol/chef-git.git
+  ref: master
+  sha: 6c19cbefcdad5ec0f62a64dae1f656d660698ea3
+  specs:
+    git (0.9.0)
+      runit (>= 0.0.0)
+
+GIT
+  remote: git://github.com/fnichol/chef-rbenv.git
+  ref: master
+  sha: c4dbcc85e3d6dae0eb8c9dc507d5ee915b7ad480
+  specs:
+    rbenv (0.6.11)
+
+GIT
+  remote: git://github.com/fnichol/chef-redis.git
+  ref: master
+  sha: ea603b9f0e097ffa4f9c2e177813fe9ee7779485
+  specs:
+    redis (0.0.3)
+
+GIT
+  remote: git://github.com/fnichol/chef-ruby_build.git
+  ref: v0.6.0
+  sha: f5eae16a199571d15f151f118338b3b11c42f694
+  specs:
+    ruby_build (0.6.0)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/imagemagick.git
+  ref: master
+  sha: 0e00236f086a16ab0ce93b3009bd551bb2375b86
+  specs:
+    imagemagick (0.2.2)
+
+GIT
+  remote: git://github.com/opscode-cookbooks/vim.git
+  ref: master
+  sha: 789bfcd847c20a5cc719b2e6bef8961d6e9cf16c
+  specs:
+    vim (1.0.2)
+
+GIT
+  remote: https://github.com/fnichol/nodejs-cookbook
+  ref: master
+  sha: 2710c028f9516fcd69640f74d4dbfc97e367345e
+  specs:
+    nodejs (1.0.0)
+      build-essential (>= 0.0.0)
+
+PATH
+  remote: cookbooks-src/rails-lastmile
+  specs:
+    rails-lastmile (0.0.1)
+
+DEPENDENCIES
+  apt (>= 0)
+  git (>= 0)
+  imagemagick (>= 0)
+  mongodb (>= 0)
+  nodejs (>= 0)
+  rails-lastmile (>= 0)
+  rbenv (>= 0)
+  redis (>= 0)
+  redisio (>= 0)
+  ruby_build (>= 0)
+  vim (>= 0)
+
