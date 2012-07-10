@@ -7,7 +7,7 @@ cookbook 'ruby_build',
   :git => 'git://github.com/fnichol/chef-ruby_build.git', 
   :ref => 'v0.6.0'
 cookbook 'rbenv',
-  :git => 'git://github.com/fnichol/chef-rbenv.git', 
+  :git => 'git://github.com/fnichol/chef-rbenv.git'
 cookbook 'apt',
   :git => 'git://github.com/fnichol/chef-apt.git'
 cookbook 'redis',
