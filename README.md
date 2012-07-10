@@ -20,3 +20,5 @@ $ vagrant up
 
 Thanks to @rosstimson, @jamesmills and especially @DanThiffault.
 See http://blog.119labs.com/2012/03/rails-vagrant-chef/ for inspiration.
+
+DISCLAIMER: Unfinished, embryonic, more forthcoming. Gestating.
