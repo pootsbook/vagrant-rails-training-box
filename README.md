@@ -11,7 +11,7 @@ $ cd vag-chef-rails
 
 $ mkdir cookbooks
 
-$ gem install librarian-chef
+$ gem install librarian
 
 $ librarian-chef install
 
