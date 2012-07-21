@@ -78,7 +78,7 @@ Vagrant::Config.run do |config|
     chef.cookbooks_path = ["cookbooks", "cookbooks-src"]
     chef.add_recipe "apt"
     chef.add_recipe "ruby_build"
-    chef.add_recipe "rbenv::system"
+    chef.add_recipe "rbenv::user_install"
     chef.add_recipe "rbenv::vagrant"
     chef.add_recipe "git"
     chef.add_recipe "nodejs::npm" # includes node.js
@@ -96,6 +96,11 @@ Vagrant::Config.run do |config|
         'gem_package' => {
           'rvm_string' => 'ruby-1.9.3-p194'
         }
+      },
+      'rbenv' => {
+        'user_installs' => [
+          { 'user' => 'vagrant' }
+        ]
       }
     }
   end
