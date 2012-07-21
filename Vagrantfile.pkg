@@ -1,0 +1,5 @@
+Vagrant::Config.run do |config|
+  config.vm.forward_port 3000, 3000 # Rails
+  config.vm.forward_port 4567, 4567 # Sinatra
+  config.vm.forward_port 8080, 8080 # Rack
+end
