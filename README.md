@@ -4,7 +4,8 @@ Get yourself an Rails environment without tearing your hair out.
 
 ## Download the Box
 
-An Ubuntu 12.10 (Precise Pangolin) 64-bit box was created for a [Ruby & Rails for Developers](http://www.eventbrite.co.uk/event/3566462385) Course on 26th July 2012. [Download the ~1GB box file](https://s3.amazonaws.com/railstraining/rubyrails.box)
+An Ubuntu 12.04 LTS (Precise Pangolin) 64-bit box was created for a [Ruby & Rails for Developers](http://www.eventbrite.co.uk/event/3566462385) Course on 26th July 2012.  
+[Download the ~1GB box file](https://s3.amazonaws.com/railstraining/rubyrails.box)
 
 ## Build the Box
 
