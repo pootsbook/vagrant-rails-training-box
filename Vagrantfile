@@ -75,7 +75,7 @@ Vagrant::Config.run do |config|
   #   chef.json = { :mysql_password => "foo" }
   # end
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = ["cookbooks", "cookbooks-src"]
+    chef.cookbooks_path = ["cookbooks", "vendor"]
     chef.add_recipe "apt"
     chef.add_recipe "ruby_build"
     chef.add_recipe "rbenv::user_install"
