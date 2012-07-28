@@ -35,3 +35,7 @@ $ vagrant up
 
 Thanks to @rosstimson, @jamesmills and especially @DanThiffault.
 See http://blog.119labs.com/2012/03/rails-vagrant-chef/ for inspiration.
+
+## References
+
+<http://stackoverflow.com/questions/9246786/how-can-i-get-chef-to-run-apt-get-update-before-running-other-recipes>
