@@ -13,11 +13,11 @@ cookbook 'apt',
 cookbook 'redis',
   :git => 'git://github.com/fnichol/chef-redis.git'
 cookbook 'nodejs',
-  :git => 'https://github.com/fnichol/nodejs-cookbook'
+  :git => 'git://github.com/fnichol/nodejs-cookbook.git'
 cookbook 'git',
   :git => 'git://github.com/fnichol/chef-git.git'
 cookbook 'rails-lastmile',
-  :path => 'cookbooks-src/rails-lastmile'
+  :path => 'vendor/rails-lastmile'
 cookbook 'redisio',
   :git => 'git://github.com/brianbianco/redisio.git'
 cookbook 'mongodb',

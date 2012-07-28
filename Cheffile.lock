@@ -1,7 +1,7 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
-    build-essential (1.0.2)
+    build-essential (1.1.0)
     runit (0.15.0)
 
 GIT
@@ -56,6 +56,14 @@ GIT
     ruby_build (0.6.0)
 
 GIT
+  remote: git://github.com/fnichol/nodejs-cookbook.git
+  ref: master
+  sha: 2710c028f9516fcd69640f74d4dbfc97e367345e
+  specs:
+    nodejs (1.0.0)
+      build-essential (>= 0.0.0)
+
+GIT
   remote: git://github.com/opscode-cookbooks/imagemagick.git
   ref: master
   sha: 0e00236f086a16ab0ce93b3009bd551bb2375b86
@@ -69,16 +77,8 @@ GIT
   specs:
     vim (1.0.2)
 
-GIT
-  remote: https://github.com/fnichol/nodejs-cookbook
-  ref: master
-  sha: 2710c028f9516fcd69640f74d4dbfc97e367345e
-  specs:
-    nodejs (1.0.0)
-      build-essential (>= 0.0.0)
-
 PATH
-  remote: cookbooks-src/rails-lastmile
+  remote: vendor/rails-lastmile
   specs:
     rails-lastmile (0.0.1)
 
