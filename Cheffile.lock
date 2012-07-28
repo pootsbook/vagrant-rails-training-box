@@ -2,6 +2,7 @@ SITE
   remote: http://community.opscode.com/api/v1
   specs:
     build-essential (1.1.0)
+    openssl (1.0.0)
     runit (0.15.0)
 
 GIT
@@ -10,6 +11,14 @@ GIT
   sha: e2ce47a6fdf471bdd0292614e07867d5ec31e424
   specs:
     redisio (1.0.3)
+
+GIT
+  remote: git://github.com/cookbooks/postgresql.git
+  ref: master
+  sha: 109c69f8e571f7a314d7154c13ff93c4dbbed5d8
+  specs:
+    postgresql (0.99.2)
+      openssl (>= 0.0.0)
 
 GIT
   remote: git://github.com/edelight/chef-cookbooks.git
@@ -88,6 +97,7 @@ DEPENDENCIES
   imagemagick (>= 0)
   mongodb (>= 0)
   nodejs (>= 0)
+  postgresql (>= 0)
   rails-lastmile (>= 0)
   rbenv (>= 0)
   redis (>= 0)

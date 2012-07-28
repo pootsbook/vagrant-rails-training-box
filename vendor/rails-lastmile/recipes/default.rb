@@ -15,6 +15,7 @@ end
 
 ['bundler',
  'rack',
+ 'pg',
  'sinatra',
  'heroku',
  'vacuum',

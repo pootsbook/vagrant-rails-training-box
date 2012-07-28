@@ -26,3 +26,5 @@ cookbook 'imagemagick',
   :git => 'git://github.com/opscode-cookbooks/imagemagick.git'
 cookbook 'vim',
   :git => 'git://github.com/opscode-cookbooks/vim.git'
+cookbook 'postgresql',
+  :git => 'vendor/postgresql'

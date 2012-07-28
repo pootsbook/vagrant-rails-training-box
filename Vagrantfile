@@ -86,6 +86,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe "redisio::enable"
     chef.add_recipe "mongodb::10gen_repo"
     chef.add_recipe "mongodb::default"
+    chef.add_recipe "postgresql::server"
     chef.add_recipe "imagemagick"
     chef.add_recipe "vim"
     chef.add_recipe "rails-lastmile"
@@ -101,6 +102,11 @@ Vagrant::Config.run do |config|
         'user_installs' => [
           { 'user' => 'vagrant' }
         ]
+      },
+      'postgresql' => {
+        'password' => {
+          'postgres' => 'postgres'
+        }
       }
     }
   end
