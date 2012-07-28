@@ -1,13 +1,12 @@
 # Vagrant Box for Learning Ruby & Rails
-## Provisioned with Chef-Solo and Librarian
 
-Get yourself an Rails environment without tearing your hair out. The use of Librarian for Librarian-Chef assumes Ruby is already installed on your machine. 
+Get yourself an Rails environment without tearing your hair out.
 
-## Download a Box without the hassle
+## Download the Box
 
 An Ubuntu 12.10 (Precise Pangolin) 64-bit box was created for a [Ruby & Rails for Developers](http://www.eventbrite.co.uk/event/3566462385) Course on 26th July 2012. [Download the ~1GB box file](https://s3.amazonaws.com/railstraining/rubyrails.box)
 
-## Build a box yourself
+## Build the Box
 
 ### Requirements
 
